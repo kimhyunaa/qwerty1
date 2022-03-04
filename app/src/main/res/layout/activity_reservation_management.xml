@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".designer.ReservationManagementActivity">
+
+    <!-- 예약자 관리 헤더 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:src="@drawable/icon_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예약자 관리"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/header_home"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_home"
+            android:layout_marginRight="6dp"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:background="@color/browser_actions_bg_grey">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="20dp"
+            android:padding="15dp"
+            android:src="@drawable/icon_profile"
+            app:civ_border_width="2dp" />
+
+        <!--이름-->
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:text="OOO"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="님"
+            android:textSize="30dp"
+            android:layout_toEndOf="@+id/profile_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_confirm_reservation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="예약확정"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btn_cancel_reservation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="예약취소"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btn_chatting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="1:1 대화방"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

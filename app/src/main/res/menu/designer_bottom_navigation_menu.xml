@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/designer_page_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="홈"/>
+
+    <item
+        android:id="@+id/designer_page_chatting"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="대화방"/>
+
+    <item
+        android:id="@+id/designer_page_setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="설정"/>
+
+    <!-- android:icon="@drawable/~"-->
+</menu>
